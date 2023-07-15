@@ -5,10 +5,9 @@ class Solution(object):
         :type n: int
         :rtype: bool
         """
-        if n<0: 
-            return False
-        else:
+        if n>0:
             return bin(n).count('1') == 1
+        return False
 
 
 #second solution 
@@ -24,4 +23,4 @@ class Solution(object):
             elif n==1:
                     return True
             else:
-                return false
+                return False
